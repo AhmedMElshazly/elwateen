@@ -1,7 +1,7 @@
 {
-    "routes": {
-        "/*.html": "index.html"
-      },
+  "root": "dist/",
+  "routes": {
+  "/**": "index.html"
+  },
   "encoding": "US-ASCII"
-
 }

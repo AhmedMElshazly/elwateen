@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@500;700&family=Indie+Flower&family=League+Gothic&family=Lobster&family=Noto+Kufi+Arabic:wght@700;800;900&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+*{
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'League Gothic', sans-serif; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: ZCOOL; */
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;      /* hide the horizental scroll bar */ 
+}
+
+header{
+    background-color: #091124;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 7px 1px 7px ;
+    color: #f2f2f2;
+    position: fixed;
+    z-index: 1000;
+}
+
+header .name-logo{
+    display:flex;
+    flex-direction: row;    
+}
+
+header .name-logo h1{
+    font-size: 1.9em;
+}
+
+header .name-logo img{
+    margin-top: 7px;
+    margin-right: 5px;
+    padding-bottom: 0px;
+    width: fit-content;
+}
+
+.name-logo-text{
+    text-align: center;
+    justify-content: center;    
+}
+
+.navigation{
+    margin-top: 6px;
+    display: flex;
+    /* justify-content:right; */
+    text-align: center;
+    transition: .7s ease;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #f2f2f2;
+    padding-top: 7px;
+    font-size: 1.2em;
+}
+
+.navigation h2{
+    color: #f2f2f2;
+    padding: 7px 17px 0px 17px;
+    font-size: 1.2em;
+}
+
+.navigation a:hover{
+    color: #8c919c;
+    font-size: 1.25em   ;
+}
+
+.home{
+    background: url(images/background5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-main-text{
+    color: #2f2a26;
+    /* -webkit-text-stroke: .1px #f2f2f2; */
+    font-size: 3em;
+    text-align: center;
+    font-weight: 4000;
+    background-color: rgba(121, 121, 121, 0.6);
+    color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    -webkit-text-stroke: .2px #091124;
+    transition: .7s ease;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.home-main-text:hover{
+    color: #2f2a26;
+    font-size: 3.2em;
+    background-color: rgba(121, 121, 121, 0.4);
+    -webkit-text-stroke: .1px #f2f2f2;
+}
+
+.home a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #f2f2f2;
+    background-color: #091124;
+    padding: 5px 13px 5px 13px;  
+    margin-top: 65px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    transition: .7s ease;
+}
+
+.home a:hover{
+    opacity: .5;
+    font-size: 2.1em;
+}
+
+.whoweare{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-bottom: 40px;
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.who-title{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+
+.who-main{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-evenly;
+    width:fit-content;
+}
+
+
+.who-main .text{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+}
+
+.who-main .text img{
+    width: 150px;
+    margin: 0 0 0 0;
+    padding: 0 0 5px 0;
+}
+
+.who-main .text p{
+    padding-top: 50px;
+}
+
+.who-main .flags{
+    max-width: 50%;
+    min-width: 50%;
+}
+
+.who-main .flags .flags-collection{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.who-main .flags .flags-collection .indv-flags{
+    margin-left: 10px;
+    padding: 15px 20px 15px 20px;
+    width: 130px;
+    display: inline-block;
+    align-items: center;
+}
+
+.who-main .flags .flags-collection .indv-flags img{
+width: 80px;
+}
+
+#south-africa h3{
+    font-size: 15px;
+}
+
+#somaliland h3{
+    font-size: 15px;
+}
+
+.who-buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.who-buttons .board{
+    text-decoration: none;
+    background-color: #091124;
+    width: 50%;
+    color: #f2f2f2;
+    border: 1px dashed;
+    border-color: #f2f2f2;
+    transition: .7s ease;
+    font-size: 1.4em;
+    padding: 7px;
+    box-shadow: 3px 3px 8px #8c919c;
+}
+
+.who-buttons .more{
+    text-decoration: none;
+    background-color: #f2f2f2;
+    width: 50%;
+    border: 1px dashed;
+    padding: 7px;
+    transition: .7s ease;
+    color: #091124;
+    font-size: 1.4em;
+    box-shadow: 3px 3px 8px #091124;
+}
+
+.who-buttons .more:hover{
+    box-shadow: 5px 5px 8px #091124;
+    padding-top: 9px;
+    padding-bottom: 9px; 
+    opacity: .6;
+}
+
+.who-buttons .board:hover{
+    box-shadow: 5px 5px 8px #8c919c;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    opacity: .7; 
+}
+
+.services{
+    padding-bottom: 170px;
+    max-width: 100%;
+    background: url(images/serv-background70half.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+.serv-title{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2em;
+    color: #f2f2f2;
+    width: 50%;
+    padding: 320px 00px 100px 0px;
+}
+
+.serv-title h1{
+    text-align: center;
+    color: #f2f2f2;
+    transition: .7s ease;
+    font-size: 70px;
+}
+
+.serv-title a{
+    text-decoration: none;
+    transition: .7s ease;
+}
+
+.serv-title h1:hover{
+    font-size: 80px;
+    color: #8c919c;
+    background-color: rgba(140, 145, 156, 0.3);
+    border: 1px #f2f2f2 dashed;
+}
+
+.companies{
+    max-width: 50%;
+    min-width: 50%;
+}
+
+.services .companies .c-logo-collection{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.indv-logo{
+    margin-left: 10px;
+    padding: 15px 20px 15px 20px;
+    width: 130px;
+    height: 150px;
+    transition: .7s ease;
+    text-align: center;
+    box-shadow: 3px 3px 8px #091124;
+    overflow: hidden;
+    transition: .8s ease;
+}
+
+.indv-logo a{
+    text-decoration: none;
+    color: #091124;
+    /* max-width: 130px; */
+    max-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: .7s ease;
+    font-size: 1em;
+}
+
+.indv-logo img{
+    min-height: 83px;
+    max-height: 83px;
+    transition: .7s ease;
+}
+
+.indv-logo:hover{
+    box-shadow: 5px 5px 8px #091124;
+    transform: scale(.9);
+}
+
+
+.companies h1{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+@media (max-width:1023px){
+    header .name-logo h1{
+        font-size: 0em;
+        margin-top: 12px;
+    }
+
+    .navigation{
+        margin-top: 14px;
+    }
+
+    .navigation a{
+        font-size: 1.1em;
+    }
+
+
+    header .name-logo img{
+        margin-top: 14px;
+    }
+    header .name-logo{
+        vertical-align: middle;
+        transition: .7s ease;
+    }
+    .navigation a:hover{
+        color: #8c919c;
+        font-size: 1.15em;
+    }
+    .navigation h2{
+        color: #f2f2f2;
+        padding: 7px 12px 0px 12px;
+        font-size: 1.1em;
+    }
+    .home-main-text{
+        font-size: 2em;
+        /* font-weight: 100; */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+    .home-main-text:hover{
+        font-size: 2.3em;
+    }
+
+    .home a{
+        font-size: 1.5em;
+        padding: 3px 9px 3px 9px;  
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+    
+    .home a:hover{
+        font-size: 1.7em;
+    }
+
+    .who-main .text img{
+        width: 320px;
+        margin: 0 0 0 0;
+        padding: 0 0 5px 0;
+    }
+}
+
+@media (max-width:680px){
+    header .name-logo h1{
+        font-size: 0em;
+        margin-top: 12px;
+    }
+
+    .navigation{
+        margin-top: 14px;
+    }
+
+    .navigation a{
+        font-size: .8em;
+    }
+
+
+    header .name-logo img{
+        margin-top: 14px;
+    }
+    header .name-logo{
+        vertical-align: middle;
+        transition: .7s ease;
+    }
+    .navigation a:hover{
+        color: #8c919c;
+        font-size: 1.15em;
+    }
+    .navigation h2{
+        color: #f2f2f2;
+        padding: 7px 12px 0px 12px;
+        font-size: 1.1em;
+    }
+    
+    .home-main-text{
+        font-size: 1.5em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .home-main-text:hover{
+        font-size: 1.6em;
+    }
+
+    .home a{
+        font-size: 1.4em;
+        padding: 3px 7px 3px 7px;  
+        margin-top: 45px;
+        border-radius: 12px;
+    }
+    
+    .home a:hover{
+        font-size: 1.5em;
+    }
+
+
+    /* Who are we section */
+    
+    .whoweare{
+        background-color: #f2f2f2;
+        text-align: center;
+        padding-bottom: 40px;
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    .who-title{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 1.7em;
+    }
+
+    .who-main{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        width:fit-content;
+    }
+
+
+    .who-main .text{
+        /* max-width: 50%; */
+        min-width: 100%;
+        /* padding: 10px 20px 10px 20px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .who-main .text img{
+        width: 120px;
+        margin: 0 0 0 0;
+        padding: 0 0 5px 0;
+    }
+
+    .who-main .text p{
+        padding-top: 10px;
+    }
+
+    .rounded{
+        width: 70%;
+    }
+
+    .who-main .flags{
+        /* max-width: 50%; */
+        min-width: 100%;
+    }
+
+    .who-main .flags .flags-collection{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .who-main .flags .flags-collection .indv-flags{
+        margin-left: 10px;
+        padding: 15px 20px 15px 20px;
+        width: 100px;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .who-main .flags .flags-collection .indv-flags img{
+    width: 80px;
+    }
+
+    #south-africa h3{
+        font-size: 15px;
+    }
+
+    #somaliland h3{
+        font-size: 15px;
+    }
+
+    .who-buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+
+    .who-buttons .board{
+        text-decoration: none;
+        background-color: #091124;
+        width: 50%;
+        color: #f2f2f2;
+        border: 1px dashed;
+        border-color: #f2f2f2;
+        transition: .7s ease;
+        font-size: 1.05em;
+        padding: 7px;
+        box-shadow: 3px 3px 8px #8c919c;
+    }
+
+    .who-buttons .more{
+        text-decoration: none;
+        background-color: #f2f2f2;
+        width: 50%;
+        border: 1px dashed;
+        padding: 7px;
+        transition: .7s ease;
+        color: #091124;
+        font-size: 1.05em;
+        box-shadow: 3px 3px 8px #091124;
+    }
+
+    .who-buttons .more:hover{
+        box-shadow: 5px 5px 8px #091124;
+        padding-top: 9px;
+        padding-bottom: 9px; 
+        opacity: .6;
+    }
+
+    .who-buttons .board:hover{
+        box-shadow: 5px 5px 8px #8c919c;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        opacity: .7; 
+    }
+
+    /* Services Section here */
+
+        
+    .services{
+        padding-bottom: 170px;
+        max-width: 100%;
+        background: url(images/serv.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+    }
+
+    .serv-title{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 2em;
+        color: #f2f2f2;
+        width: 100%;
+        padding: 120px 00px 100px 0px;
+    }
+
+    .serv-title h1{
+        text-align: center;
+        color: #f2f2f2;
+        transition: .7s ease;
+        font-size: 55px;
+    }
+
+    .serv-title a{
+        text-decoration: none;
+        transition: .7s ease;
+    }
+
+    .serv-title h1:hover{
+        font-size: 70px;
+        color: #8c919c;
+        background-color: rgba(140, 145, 156, 0.3);
+        border: 1px #f2f2f2 dashed;
+    }
+
+    .companies{
+        min-width: 100%;
+        background-color: #f2f2f2;
+    }
+
+    .companies h1{
+        font-size: 2px;
+    }
+
+    .services .companies .c-logo-collection{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .indv-logo{
+        margin-left: 10px;
+        padding: 15px 20px 15px 20px;
+        width: 130px;
+        height: 150px;
+        transition: .7s ease;
+        text-align: center;
+        box-shadow: 3px 3px 8px #091124;
+        overflow: hidden;
+        transition: .8s ease;
+    }
+
+    .indv-logo a{
+        text-decoration: none;
+        color: #091124;
+        /* max-width: 130px; */
+        max-height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: .7s ease;
+        font-size: 1em;
+    }
+
+    .indv-logo img{
+        min-height: 83px;
+        max-height: 83px;
+        transition: .7s ease;
+    }
+
+    .indv-logo:hover{
+        box-shadow: 5px 5px 8px #091124;
+        transform: scale(.9);
+    }
+
+
+    .companies h1{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    
+}
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#091124;
+    color:#f2f2f2   ;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  footer .list-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+

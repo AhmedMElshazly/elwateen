@@ -315,6 +315,50 @@ header .name-logo img{
         margin: 0 0 0 0;
         padding: 0 0 5px 0;
     }
+    /* -------------- */
+
+    .contactDetails{
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .contactDetails .indvCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        border-radius: 30px;
+        padding: 20px;
+        max-width: 200px;
+        min-width: 200px;
+    }
+    
+    .contactDetails .indvCard:hover{
+        transform: scale(.8);
+        z-index: 1000000;
+    }
+    
+    .contactDetails .indvCard img{
+        width: 60px;
+        padding: 10px;
+    
+        /* align-self: center; */
+    }
+    
+    .contactDetails .indvCard .text{
+        font-weight: lighter;
+        font-size: 12px;
+    }
+    
+    .contactDetails .indvCard h3{
+        font-size: 15px;
+    }
 }
 
 @media (max-width:676px){
@@ -368,6 +412,51 @@ header .name-logo img{
     
     .home a:hover{
         font-size: 1.5em;
+    }
+
+    /* -------------- */
+
+    .contactDetails{
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .contactDetails .indvCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: white;
+        border-radius: 30px;
+        padding: 20px;
+        max-width: 110px;
+        min-width: 110px;
+    }
+    
+    .contactDetails .indvCard:hover{
+        transform: scale(.8);
+        z-index: 1000000;
+    }
+    
+    .contactDetails .indvCard img{
+        width: 30px;
+        padding: 10px;
+    
+        /* align-self: center; */
+    }
+    
+    .contactDetails .indvCard .text{
+        font-weight: lighter;
+        font-size: 11px;
+    }
+    
+    .contactDetails .indvCard h3{
+        font-size: 10px;
     }
     
 }
